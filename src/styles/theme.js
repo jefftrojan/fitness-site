@@ -15,3 +15,5 @@ export const darkTheme = {
     TextColor: "#000",
     DescriptionColor: "#5c5e62",
 }
+
+// device size for media query 
