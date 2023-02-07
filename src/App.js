@@ -1,7 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import { lightTheme } from './styles/theme'
-import { NavBar } from "./components";
+import { Hero, NavBar } from "./components";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <GlobalStyle />
 
       <NavBar />
+      <Hero />
 
         
     </ThemeProvider>
