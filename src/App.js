@@ -1,11 +1,12 @@
-
+import { ThemeProvider } from "styled-components";
+import { lightTheme } from 'styles/theme'
 function App() {
   return (
-    <div className="App">
+    <ThemeProvider theme={lightTheme}>
+      {" "}
 
-      <h1> Fitness site</h1>
-      
-    </div>
+        <h1> Fitness site</h1>
+    </ThemeProvider>
   );
 }
 
