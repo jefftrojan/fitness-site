@@ -1,6 +1,10 @@
 import React from "react";
-import { Container } from "components/common/CommonStyle";
-import { NavBarContainer, NavItem, NavLink, NavList, TitleLink } from "./NavBarStyle"
+import { Container } from "../common/CommonStyle";
+import { Hamburger, NavBarContainer, NavIcon, NavItem, NavLink, NavList, TitleLink, } from "./NavBarStyle"
+import { BsSun } from "react-icons/bs";
+import {GiHamburgerMenu} from "react-icons/gi"
+
+
 
 export default function NavBar() {
     return (
@@ -18,9 +22,16 @@ export default function NavBar() {
                             <NavLink to="/"> Class</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to="/"> Pricing</NavLink>
+                            <NavLink to="/"> Blog</NavLink>
                         </NavItem>
+
+                        <NavIcon>
+                            <BsSun />
+                        </NavIcon>
                     </NavList>
+                    <Hamburger>
+                        <GiHamburgerMenu />
+                    </Hamburger>
                 
             </NavBarContainer>
         </Container>

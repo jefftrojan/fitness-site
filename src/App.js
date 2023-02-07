@@ -1,14 +1,21 @@
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import { lightTheme } from './styles/theme'
+import { NavBar } from "./components";
+import { BrowserRouter as Router } from "react-router-dom";
+
 function App() {
   return (
-    <ThemeProvider theme={lightTheme}>
+    <Router>
+        <ThemeProvider theme={lightTheme}>
       {" "}
       <GlobalStyle />
 
-        <h1> Fitness site</h1>
+      <NavBar />
+
+        
     </ThemeProvider>
+    </Router>
   );
 }
 

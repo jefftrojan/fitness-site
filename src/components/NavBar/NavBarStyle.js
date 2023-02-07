@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import styled  from "styled-components";
 import { device } from "../../styles/theme";
-export const NavContainer = styled.div`
+export const NavBarContainer = styled.div`
 
     display: flex;
     justify-content:space-between;
@@ -8,13 +9,13 @@ export const NavContainer = styled.div`
 
 `;
 
-export const TitleLink = styled.link`
+export const TitleLink = styled(Link)`
 
-    color: ${props => props.theme.TextColor};
+    color: ${(props) => props.theme.TextColor};
     font-size: 2rem;
     font-weight: bold,
 
-`
+`;
 export const NavList = styled.ul`
     display: flex;
     align-items: center;
@@ -25,13 +26,13 @@ export const NavList = styled.ul`
         flex-direction: column;
         row-gap: 5rem;
         padding: 5rem;
-        background-color: ${props => props.theme.ContainerColor};
+        background-color: ${(props) => props.theme.ContainerColor};
         position: fixed;
         width: 350px;
         min-height: 100vh;
         top: 55px;
-        box-shadow:  0px 5px rgba(255, 255, 255, 0.47);
-        right: 0;
+        box-shadow:  0px 2px hsla(45, 100%, 15%, 0.15);
+        right: -600%;
     }
 
 
@@ -39,12 +40,12 @@ export const NavList = styled.ul`
 
 export const NavItem = styled.li ``;
 
-export const NavLink = styled.link`
+export const NavLink = styled(Link)`
     font-size: 1.5rem;
-    color: ${props => props.about.theme.TextColor};
+    color: ${(props) => props.theme.TextColor};
     transition: .4s;
     &:hover {
-       color: ${props => props.about.theme.PrimaryColor};
+       color: ${(props) => props.theme.PrimaryColor};
 
     }
     @media ${device.tablet}{
@@ -62,15 +63,15 @@ export const NavIcon = styled.div`
     svg {
         font-size: 2.2rem;
         cursor: pointer;
-        fill: ${props => props.theme.TextColor};
+        fill: ${(props) => props.theme.TextColor};
 
     }
-`
+`;
 
 export const Hamburger = styled.div`
     font-size: 2rem;
     cursor: pointer;
-    color: ${props => props.theme.TextColor};
+    color: ${(props) => props.theme.TextColor};
 
     @media ${device.tablet} {
         display: none;
