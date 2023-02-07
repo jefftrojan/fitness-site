@@ -10,7 +10,7 @@ export const Container = styled.div`
         margin: 0 auto;
     }
 
-`
+`;
 export const StyledButton = styled.button`
     background-color: transparent;
     border: 2px solid ${props => props.theme.TextColor};
@@ -36,6 +36,14 @@ export const StyledButton = styled.button`
         padding: 1.3rem 2rem;
 
     }
+
+
+`;
+// inherit style from StyledButton
+export const TrialButton = styled(StyledButton)`
+    background-color: ${props  => props.theme.PrimaryColor};
+    border: ${props => props.theme.PrimaryColor};
+
 
 
 `;
