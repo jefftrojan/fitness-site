@@ -8,6 +8,7 @@ function App() {
   return (
     <Router>
         <ThemeProvider theme={lightTheme}>
+          <h1> Fitness Gym site</h1>
       {" "}
       <GlobalStyle />
 
